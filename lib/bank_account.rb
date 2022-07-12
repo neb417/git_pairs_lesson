@@ -14,9 +14,7 @@ class BankAccount
   end
 
   def withdraw(amount)
-    if amount < @balance
-      @balance = @balance - amount
-    end
+    @balance -= amount
   end
 
   def verify?(id, pin)
